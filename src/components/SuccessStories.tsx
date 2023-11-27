@@ -37,9 +37,9 @@ const Stories = [
 export default function SuccessStories() {
   return (
     <div>
-      <Carousel className="m-auto max-w-[300px]  sm:max-w-[500px] lg:max-w-[850px] xl:max-w-[1000px]">
+      <Carousel className="m-auto max-w-[300px] min-h-[300px] sm:max-w-[500px] lg:max-w-[850px] xl:max-w-[1000px]">
         {Stories.map((story) => (
-          <div className="flex flex-col-reverse lg:flex-row rounded-lg gap-x-10 min-w-[300px] sm:min-w-[500px] lg:min-w-[850px] xl:min-w-[1000px] items-center lg:rounded-[3rem] overflow-hidden">
+          <div className="flex flex-col-reverse min-h-[300px] lg:flex-row rounded-lg gap-x-10 min-w-[300px] sm:min-w-[500px] lg:min-w-[850px] xl:min-w-[1000px] items-center lg:rounded-[3rem] overflow-hidden">
             <div className="hidden lg:flex items-center h-full w-[10%] lg:w-[30%] bg-blue-600">
               <Quote className="hidden lg:flex m-auto text-white" size={60} />
             </div>
